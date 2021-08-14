@@ -38,6 +38,8 @@ for deg in range(start_deg, larger_deg + 1, deg_skip):
             print("Degree {}, Test {}/{}".format(deg, test + 1, num_tests))
             start = time.time()
             roots = (yr.solve([f,g,h], a, b))
+            if len(roots) == 0:
+                print("!!! DIDNT FIND ANY ROOTS!!")
             end = time.time()
 
             test_time += end - start
