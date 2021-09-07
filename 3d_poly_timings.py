@@ -50,9 +50,9 @@ for deg in range(start_deg, larger_deg + 1, deg_skip):
             num_roots_deg.append(num_roots)
             if num_roots > 0:
                 has_roots = True
-#            if len(roots) == 0:
-#                print("!!! DIDNT FIND ANY ROOTS!!")
-
+            if len(roots) == 0:
+                print("!!! DIDNT FIND ANY ROOTS!!")
+ 
             if has_roots:
                 norm_f =sum(sum(sum(abs(c1))))
                 norm_g = sum(sum(sum(abs(c2))))
